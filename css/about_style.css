@@ -12,3 +12,11 @@ p {
 ul {
     font-size: 0.9rem;
 }
+
+.bio {
+    display: flex;
+    flex-flow: column wrap;
+    padding-right: 7.5%;
+    padding-left: 7.5%;
+}
+
