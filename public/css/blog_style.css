@@ -1,0 +1,64 @@
+@import url("./style.css");
+
+html {
+    font-family: "Poppins";
+}
+
+.feed {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.post {
+    min-width: 600px;
+    margin-block: 10px;
+    border-style: double;
+    border-radius: 10px;
+    border-color: darkorchid;
+    border-width: 5px;
+}
+
+.post-header {
+    background-color: rgb(252, 156, 247);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: darkorchid;
+    padding-inline: 10px;
+    padding-block: 5px;
+}
+
+.post-header h1 {
+    margin: 0px;
+    font-family: "PoppinsBold";
+    font-size: 18pt;
+}
+
+.post-content {
+    padding-inline: 10px;
+    padding-block: 10px;
+}
+
+.post-content p {
+    margin: 0px;
+}
+
+.post-footer {
+    padding-inline: 10px;
+    padding-block: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 5px;
+    border-top-style: solid;
+    border-top-color: darkorchid;
+    border-top-width: 2px;
+}
+
+.post-footer p {
+    margin: 0px;
+    font-style: italic;
+    font-size: 10pt;
+    color: rgb(80, 80, 80);
+}

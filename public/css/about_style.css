@@ -1,0 +1,22 @@
+@import url("../css/style.css");
+
+html {
+    font-family: "Poppins";
+    font-size: 16px;
+}
+
+p {
+    font-size: 0.9rem;
+}
+
+ul {
+    font-size: 0.9rem;
+}
+
+.bio {
+    display: flex;
+    flex-flow: column wrap;
+    padding-right: 7.5%;
+    padding-left: 7.5%;
+}
+

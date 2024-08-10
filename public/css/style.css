@@ -1,0 +1,91 @@
+@import "../css/colors.css";
+
+/* header style */
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-family: "PoppinsBold"
+}
+
+header nav {
+    font-family: "Poppins"
+}
+
+.nav-bar {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    column-gap: 10px;
+    background-color: aquamarine;
+    width: 100%
+}
+
+.nav-bar h1 {
+    font-family: "PoppinsBold";
+    font-size: 25px
+}
+
+.nav-bar nav {
+    font-family: "Poppins";
+}
+
+.header {
+    padding: 10px 16px;
+    color: #f1f1f1
+}
+
+.header-spacer {
+    height: 135px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 102px;
+}
+
+.content-card {
+    background-color: #ddd;
+    outline-color: #222;
+    outline-width: 2px;
+    outline-style: solid;
+    padding-inline: 10px;
+    margin-block: 10px;
+    border-radius: 10px;
+}
+
+
+/* Fonts */
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "PoppinsItalic";
+    font-style: italic;
+    font-weight: normal;
+    src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "PoppinsBold";
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "PoppinsBoldItalic";
+    font-style: italic;
+    font-weight: 700;
+    src: url('../fonts/Poppins-BoldItalic.ttf') format('truetype');
+}
