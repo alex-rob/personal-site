@@ -1,4 +1,5 @@
-@import "../css/colors.css";
+@import "colors.css";
+@import "fonts.css";
 
 /* header style */
 header {
@@ -46,7 +47,7 @@ header nav {
     width: 100%;
 }
 
-.sticky + .content {
+.sticky+.content {
     padding-top: 102px;
 }
 
@@ -58,34 +59,4 @@ header nav {
     padding-inline: 10px;
     margin-block: 10px;
     border-radius: 10px;
-}
-
-
-/* Fonts */
-@font-face {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: normal;
-    src: url('../fonts/Poppins-Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: "PoppinsItalic";
-    font-style: italic;
-    font-weight: normal;
-    src: url('../fonts/Poppins-Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: "PoppinsBold";
-    font-style: normal;
-    font-weight: 700;
-    src: url('../fonts/Poppins-Bold.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: "PoppinsBoldItalic";
-    font-style: italic;
-    font-weight: 700;
-    src: url('../fonts/Poppins-BoldItalic.ttf') format('truetype');
 }

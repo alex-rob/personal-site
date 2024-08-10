@@ -1,22 +1,81 @@
+@import "fonts.css";
+
 :root {
-    --color-background: #5f4d69ff;
-    --color-primary: #8f14faff;
-    --color-secondary: #b543f7ff;
+	--color-background: #251d29ff;
+	--color-primary: #8f14faff;
+	--color-secondary: #b543f7ff;
+	--color-font: rgb(185, 185, 185);
+	--color-font-emphasis: #e0e0e0ff;
 }
 
-#container {
-    position: relative;
-    border-style: solid;
-    border-color: black;
-    border-width: 2px;
-    border-radius: 3px;
-}
-
-#background {
-    position: relative;
-    background-color: aquamarine;
+html,
+body {
+	height: 100%;
+	margin: 0;
 }
 
 body {
-    margin: 0px;
+	background-color: var(--color-background);
+}
+
+html {
+	font-family: "Poppins";
+}
+
+h1 {
+	font-family: "PoppinsBold";
+	margin: 0;
+}
+
+h2 {
+	margin: 0;
+	font-size: 1.2rem;
+}
+
+p {
+	margin: 0;
+}
+
+#base-container {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	gap: 0;
+}
+
+#navbar {
+	height: 100%;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+#content {
+	height: 100%;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+#self-description {
+	max-width: 350px;
+	margin-block: 10px;
+}
+
+#links {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.text-emphasis {
+	color: var(--color-font-emphasis);
+}
+
+.text-body {
+	color: var(--color-font);
 }
