@@ -2,8 +2,8 @@
 
 :root {
 	--color-background: #251d29ff;
-	--color-primary: #8f14faff;
-	--color-secondary: #b543f7ff;
+	--color-primary: rgb(145, 28, 247);
+	--color-secondary: rgb(129, 100, 255);
 	--color-font: rgb(185, 185, 185);
 	--color-font-emphasis: #e0e0e0ff;
 }
@@ -37,24 +37,32 @@ p {
 }
 
 #base-container {
-	width: 100%;
+	height: 100%;
+	max-width: 1280px;
 	display: flex;
 	flex-direction: row;
 	gap: 0;
+	padding-inline: 40px;
+	margin-inline: auto;
 }
 
 #navbar {
 	height: 100%;
+	padding: 0;
+	margin: 0;
 	width: 50%;
 	display: flex;
 	flex-direction: column;
+	/* align-items: center; */
+	justify-content: center;
+	position: sticky;
 }
 
 #content {
-	height: 100%;
 	width: 50%;
 	display: flex;
 	flex-direction: column;
+	margin-top: 100px;
 }
 
 #self-description {
@@ -65,11 +73,18 @@ p {
 #links {
 	display: flex;
 	flex-direction: row;
-	align-items: center;
 	gap: 10px;
 	list-style: none;
 	padding: 0;
 	margin: 0;
+	width: 100%;
+}
+
+#experience-list {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
 }
 
 .text-emphasis {
@@ -78,4 +93,63 @@ p {
 
 .text-body {
 	color: var(--color-font);
+}
+
+.experience-card {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+.experience-card .experience-dates {
+	width: 30%;
+	margin: 0;
+	padding: 0;
+}
+
+.experience-card .experience-content {
+	width: 70%;
+	margin: 0;
+	padding: 0;
+}
+
+.experience-card h1 {
+	font-size: 1rem;
+}
+
+.experience-card h2 {
+	font-size: 0.9rem;
+	margin-bottom: 20px;
+}
+
+.content-section {
+	margin-bottom: 50px;
+}
+
+.experience-content p {
+	font-size: 0.95rem;
+	margin-bottom: 20px;
+}
+
+.experience-skills {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 5px;
+}
+
+.experience-skills li {
+	border-color: var(--color-primary);
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 5px;
+	background-color: var(--color-secondary);
+	padding-inline: 3px;
+	margin: 0;
 }
