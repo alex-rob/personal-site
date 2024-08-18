@@ -36,27 +36,42 @@ p {
 	margin: 0;
 }
 
+a:link,
+a:visited {
+	text-decoration: underline;
+	color: var(--color-font-emphasis);
+}
+
+a:active,
+a:visited:active {
+	color: var(--color-font-emphasis);
+}
+
 #base-container {
 	height: 100%;
 	max-width: 1280px;
-	display: flex;
-	flex-direction: row;
-	gap: 0;
 	padding-inline: 40px;
 	margin-inline: auto;
 }
 
+#sticky-container {
+	display: flex;
+	flex-direction: row;
+	gap: 0;
+}
+
 #navbar {
+	position: sticky;
+	top: 0;
 	height: 100%;
 	padding: 0;
 	margin: 0;
 	width: 50%;
 	display: flex;
 	flex-direction: column;
-	/* align-items: center; */
 	justify-content: center;
-	position: sticky;
-	top: 0;
+	height: 100vh;
+	padding-block: auto;
 }
 
 #navbar-placeholder {
@@ -131,7 +146,6 @@ p {
 
 .experience-card h2 {
 	font-size: 0.9rem;
-	margin-bottom: 20px;
 }
 
 .content-section {
@@ -140,7 +154,7 @@ p {
 
 .experience-content p {
 	font-size: 0.95rem;
-	margin-bottom: 20px;
+	margin-block: 20px;
 }
 
 .experience-skills {
@@ -161,4 +175,31 @@ p {
 	background-color: var(--color-secondary);
 	padding-inline: 3px;
 	margin: 0;
+}
+
+.project-card {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 0;
+	margin-bottom: 20px;
+	padding: 0;
+	text-decoration: none;
+}
+
+.project-card .project-pic {
+	width: 30%;
+	margin: 0;
+	padding: 0;
+}
+
+.project-card .project-content {
+	width: 70%;
+	margin: 0;
+	padding: 0;
+}
+
+.project-card h1 {
+	font-size: 1rem;
+	margin-bottom: 20px;
 }
